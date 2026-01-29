@@ -2,6 +2,7 @@
 publish: true
 ---
 
+
 $\mathbb{S^1} = \{ x,y \in \mathbb{R} | x^2 + y^2 = 1 \}$
 
 A knot is a path in 3d space:
