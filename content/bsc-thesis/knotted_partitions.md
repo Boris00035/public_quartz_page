@@ -3,8 +3,6 @@ title: Knotted Partitions
 publish: true
 ---
 
-[[thesis]]
-
 #### Definition (Ambient isotopy)
 Let $N,M$ be manifolds and $g,h: N \to M$ embeddings into $M$. Then a map $F: M \times [0,1] \to M$ is an ambient isotopy taking $g$ to $h$ if for each $t$, $F_t: M \to M, F_t = F(\_, t)$ is a homeomorphism, $F_0$ is the identity, and $F_1 \circ g = h$.      
 
@@ -18,6 +16,16 @@ Let $P$ be a $k$-knotted partition. Then we say that $F$ is a knotted isotopy if
 
 #### Definition Compatibility of a knot with a knotted partition
 Todo
+
+---
+
+It would be nice if this gave a (right now vaguely stated) diagram like:
+
+<!-- https://q.uiver.app/#q=WzAsNCxbMCwwLCJLIl0sWzEsMCwiSyciXSxbMCwxLCJLUCJdLFsxLDEsIktQJyJdLFswLDEsIkZfdCJdLFswLDIsIkNtcCIsMl0sWzEsMywiQ21wIl0sWzIsMywiRl4qX3QiXV0= -->
+<iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsNCxbMCwwLCJLIl0sWzEsMCwiSyciXSxbMCwxLCJLUCJdLFsxLDEsIktQJyJdLFswLDEsIkZfdCJdLFswLDIsIkNtcCIsMl0sWzEsMywiQ21wIl0sWzIsMywiRl4qX3QiXV0=&embed" width="304" height="304" style="border-radius: 8px; border: none;"></iframe>
+
+
+As in an ambient isotopy $F$ of a knot $K$ induced a knotted isotopy on any knotted partition that $K$ is compatible with, and it preserves compatibility. 
 
 ### Questions
 1. Do knotted isotopies of some knotted partition induce ambient isotopies on compatible knots?

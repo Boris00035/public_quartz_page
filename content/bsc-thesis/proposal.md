@@ -2,7 +2,6 @@
 title: Proposal - Laterally Growing Knots and their Graphs
 publish: true
 ---
-[[thesis]]
 
 There are multiple ways of looking at knots. We build upon an alternative approach to study knots by growing them out laterally. In this approach the knot is partitioned into N “cells,” each of which is labelled (or colored). These are grown out (under constant-volume-increase, cohesion, and non-penetration restrictions), until the knot has assumed a sufficiently spherical shape.
 Cells that were not neighbors initially, have now become neighbors, and the structure of this surface-covering of the sphere is believed to encode the knot structure. The bounding line between non-neighboring regions allows for the construction of a graph, where the vertices are where various neighboring regions meet.

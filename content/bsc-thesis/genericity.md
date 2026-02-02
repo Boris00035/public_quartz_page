@@ -3,8 +3,6 @@ title: Genericity exercises
 publish: true
 ---
 
-[[thesis]]
-
 For most of this page, we refer to [Golubitsky and Guillemin](books/Stable_Mappings_and_their_Singularities.pdf) for definitions etc. We always implictly endow $C^k(X,Y)$ with the Whitney $C^k$ topology.
 
 ### Definition transversality of vector spaces
