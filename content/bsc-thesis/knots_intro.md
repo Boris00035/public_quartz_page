@@ -15,7 +15,7 @@ $F: [0,1] \times \mathbb{R}^3 \to \mathbb{R}^3$ with $F(0, \_)|_{\mathbb{S}^1} =
 Fundamental group of a space $X$ at $p \in X$:
 $\pi_1(X,p) = \{ [\gamma] | \gamma \in P(X) \}$, met $P(X)$ alle paden die op p beginnen en eindigen.
 
-A knot invariant is a object $I(k)$ such that for two knots $k, k'$ which are equivalent, it holds that $I(k) \cong I(k')$. 
+A knot invariant is an object $I(k)$ such that for two knots $k, k'$ which are equivalent, it holds that $I(k) \cong I(k')$. 
 
 Example of a knot invariant:
 $\pi_1(\mathbb{R}^3 \backslash k(\mathbb{S}^1),p)$

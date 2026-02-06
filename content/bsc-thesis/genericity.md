@@ -41,10 +41,10 @@ Say we have a space $X$. We then call a subset $A \subset X$ a residual set if $
 
 We note that $f(\mathbb{S}^1) \pitchfork g(\mathbb{S}^1)$ means that $\forall q \in f(\mathbb{S}^1) \cap g(\mathbb{S}^1), T_qf(\mathbb{S}^1) + T_qg(\mathbb{S}^1) = T_q\mathbb{R}^2 \cong \mathbb{R}^2$.
 
-<center>The most straightforward way to do this is with multijets.</center>
 
 
 #### Proof: 
+<center>The most straightforward way to do this is with multijets.</center>
 
 <!-- Define the following spaces:
 $$
