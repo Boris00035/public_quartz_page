@@ -44,7 +44,7 @@ g: M \backslash \partial_C M \to \{0\dots n\}, \quad p \mapsto C_{f,p}.
 $$
 Where we endow $\{ 0\dots n \}$ with the discrete topology. We define the colour partition as the collection of subsets $P_k := g^{-1}(k)$, together with the colour boundary $\partial_C M$.
 
-[^2]: We should specify in some way that the sphere we take is large enough.
+[^2]: We should specify in some way that the sphere we take is large enough to contain the entire knot.
 
 #### Definition (Colour boundary graph)[^2]
 We define the colour boundary graph as $\mathbb{S}^2 \cap \partial_C M$. 
