@@ -1,6 +1,6 @@
 ---
-publish: true
 title: Cells as preimages
+publish: true
 ---
 
 ## Sketch
