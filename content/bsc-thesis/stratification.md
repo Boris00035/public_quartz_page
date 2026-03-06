@@ -11,7 +11,7 @@ Manifold always means smooth manifold.
 
 
 #### Definition (is this enough? Can the homeomorphisms change how the strata fit together?)
-Let $(X, \mathcal{S}_X), (X, \mathcal{S}_{X'})$ two stratified manifolds. We say these stratifications $\mathcal{S}_X, \mathcal{S}_{X'}$ are equivalent if: 
+Let $(X, \mathcal{S}_X), (X, \mathcal{S}_{X'})$ two stratified manifolds. We say the stratifications $\mathcal{S}_X, \mathcal{S}_{X'}$ are equivalent if: 
 * There is a bijection $b: \mathcal{S}_X \to \mathcal{S}_{X'}$ 
 * and $b(s)$ is homeomorphic to $s$ for all $s \in \mathcal{S}_{X}$. 
 
@@ -25,31 +25,39 @@ Where $f(\mathcal{S}_X)$ is defined as the collection of images of $f$ of the co
 
 [^strat]: Does a stratification always descent to subsets?
 
-#### Definition (stratified model) (can this also be done with just "there exists a neighbourhood that is diffeo to some component of ... ?")
+#### Definition (stratified model) 
 Let $M$ some stratified manifold. We say that a collection of stratified manifolds $\mathcal{M}$ is a _stratified model_ of $M$, if for every point $p \in M$, there exists a neighbourhood (endowed with the subset stratification[^strat]) which is diffeomorphic to some component of $\mathcal{M}$.
 
-#### Claim (max-stratification)
-Let $\mathcal{S} := \{U_S \; | \; S \subset \{0..n\} \}$ be a collection of subsets of $\mathbb{R}^n$ with $U_S$ given by:
+#### Definition / Claim (max-stratification)
+Let $\mathcal{S}_m := \{U_S \; | \; S \subset \{0..n\} \}$ be a collection of subsets of $\mathbb{R}^n$ with $U_S$ given by:
 
 $$ 
 U_S := \{ p \in \mathbb{R}^n | \; p_i \in \max_j(p_j), \; \forall i \in S \}.
 $$
 
-Then $\mathcal{S}$ is a stratification, which we will call the max-stratification. Additionally, the dimension of $U_S$ will be given by $\dim(U_S) = n - |S|$. 
+Then $\mathcal{S}_m$ is a stratification, which we will call the max-stratification. Additionally, the dimension of $U_S$ will be given by $\dim(U_S) = n - |S|$. 
 
 
 #### Claim (needs work)
 Let $f: M \to \mathbb{R}^n$ a (generic?) smooth map. Then this induces a stratification on $M$ by "pulling back" the max-stratification.
 
-
 [^model]: Need to define these model manifolds along with their stratification. 
 
-#### Claim
+[^genericity]: Is this if and only if? If so, then we could also state that a bifurcation point is a point (x,t) where the stratified model is not actually a model.
+
+#### Claim [^genericity]
 Let $f: M \to \mathbb{R}^n$ a generic smooth map. We endow $M$ with the stratification induced by pulling back the max-stratification on $\mathbb{R}^n$ over $f$. Then $\{ \text{Y}, - \}$ [^model] is a stratified model of $M$.
+
+#### Definition
+We define an _almost family of generic functions_ as a family of functions $g: M \times \mathbb{R} \to \mathbb{R}^n$ together with a set of _bifurcation points_ $\subset M \times \mathbb{R}$, where for each $t$ not part of a bifurcation point, $g(\_, t)$ is generic.
+
+#### Claim
+Let $(x_b,t_b)$ be a bifurcation point. Then we can model this bifurcation as a half plane moving over the point $x_b$, crossing it exactly at $t_b$.
+
 
 
 ## Evolution of $f$
-* Get recurrence relation from Erens document
+* Investigate how this $f$ should evolve according to the cell growth specified in this [paper](https://repository.kulib.kyoto-u.ac.jp/server/api/core/bitstreams/7de154cb-2df4-4436-8a90-6dca9da1b221/content).
 
 <!-- ----
 
