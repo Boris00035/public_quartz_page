@@ -1,9 +1,59 @@
 ---
-title: Cells as preimages
+title: Stratification
 publish: true
 ---
-
 ## Sketch
+We have a function $f: M \to \mathbb{R}^n$, with $n$ the number of colours we use. $\mathbb{R}^n$ is stratified with $n$ types of strata, according to which coordinate is maximal. We want to look at how $f$ pulls this stratification back to $M$.
+
+
+## Formal
+Manifold always means smooth manifold.
+
+
+#### Definition (is this enough? Can the homeomorphisms change how the strata fit together?)
+Let $(X, \mathcal{S}_X), (X, \mathcal{S}_{X'})$ two stratified manifolds. We say these stratifications $\mathcal{S}_X, \mathcal{S}_{X'}$ are equivalent if: 
+* There is a bijection $b: \mathcal{S}_X \to \mathcal{S}_{X'}$ 
+* and $b(s)$ is homeomorphic to $s$ for all $s \in \mathcal{S}_{X}$. 
+
+#### Definition (is this the right way to do this?) 
+Let $(X, \mathcal{S}_X), (Y, \mathcal{S}_Y)$ two stratified manifold. We say $f$ is a diffeomorphism of these, if:
+* $f$ is a diffeomorphism between $X$ and $Y$.
+* $f(\mathcal{S}_X)$ is equivalent to $\mathcal{S}_Y$.
+* $f(\mathcal{S}_Y)$ is equivalent to $\mathcal{S}_X$.
+
+Where $f(\mathcal{S}_X)$ is defined as the collection of images of $f$ of the components of $\mathcal{S}_X$.
+
+[^strat]: Does a stratification always descent to subsets?
+
+#### Definition (stratified model) (can this also be done with just "there exists a neighbourhood that is diffeo to some component of ... ?")
+Let $M$ some stratified manifold. We say that a collection of stratified manifolds $\mathcal{M}$ is a _stratified model_ of $M$, if for every point $p \in M$, there exists a neighbourhood (endowed with the subset stratification[^strat]) which is diffeomorphic to some component of $\mathcal{M}$.
+
+#### Claim (max-stratification)
+Let $\mathcal{S} := \{U_S \; | \; S \subset \{0..n\} \}$ be a collection of subsets of $\mathbb{R}^n$ with $U_S$ given by:
+
+$$ 
+U_S := \{ p \in \mathbb{R}^n | \; p_i \in \max_j(p_j), \; \forall i \in S \}.
+$$
+
+Then $\mathcal{S}$ is a stratification, which we will call the max-stratification. Additionally, the dimension of $U_S$ will be given by $\dim(U_S) = n - |S|$. 
+
+
+#### Claim (needs work)
+Let $f: M \to \mathbb{R}^n$ a (generic?) smooth map. Then this induces a stratification on $M$ by "pulling back" the max-stratification.
+
+
+[^model]: Need to define these model manifolds along with their stratification. 
+
+#### Claim
+Let $f: M \to \mathbb{R}^n$ a generic smooth map. We endow $M$ with the stratification induced by pulling back the max-stratification on $\mathbb{R}^n$ over $f$. Then $\{ \text{Y}, - \}$ [^model] is a stratified model of $M$.
+
+
+## Evolution of $f$
+* Get recurrence relation from Erens document
+
+<!-- ----
+
+## Sketch (old)
 
 What we want to to look at is a function $f: \mathbb{R}^3 \to \mathbb{R}^n$, where $n$ is the number of "colours" we consider. (This is actually an interesting parameter, would this induce some sort of homology?) This function signifies how close each point is to being that colour. We then can partition $\mathbb{R}^3$ into the following: $U_k := \{ p \in \mathbb{R}^3 | \; \text{max}_i(f(p)_i) = k \}$. This is actually a pullback of a partition defined on $\mathbb{R}^n$ by: $V_k := \{ p \in \mathbb{R}^n | \; p_k > p_i \}$. 
 
@@ -23,7 +73,7 @@ Maybe we could / should define something like a colour bundle?
 
 Should it be written as a partition of $N$ being pulled back to a partition on $M$?
 
-## Formal
+## Formal (old)
 
 #### Definition
 For a generic continuous function $f: M \to N$, (with $\dim(N) = n$) we define: 
@@ -52,4 +102,4 @@ We define the colour boundary graph as $\mathbb{S}^2 \cap \partial_C M$.
 #### Conjecture (needs work)
 For a generic continuous function $f: M \to N$, having colour degree 3 is generic in the collection of high ($ \geq 3 $) degree boundary points.
 
-
+ -->

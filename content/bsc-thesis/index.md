@@ -10,11 +10,8 @@ publish: true
 * [Wiki page](https://en.wikipedia.org/wiki/Floer_homology#Heegaard_Floer_homology) on how certain knot invariants are categorified, see also: [Khovanov homology](https://en.wikipedia.org/wiki/Khovanov_homology).
 * A very nice [Stack Exchange](https://math.stackexchange.com/questions/1311865/equivalence-of-knots-ambient-isotopy-vs-homeomorphism) thread on using homeomorphisms or isotopies for knot theory and when they are equivalent.
 * [Searchable knot database (very powerful, can search by invariants etc.)](https://knotinfo.org/)
-<<<<<<< HEAD
 * [Knot energy](https://en.wikipedia.org/wiki/Knot_energy)
-=======
 * [Horst Schubert, did work on decomposition of knots into prime knots](https://en.wikipedia.org/wiki/Horst_Schubert), see also [satelite knot](https://en.wikipedia.org/wiki/Satellite_knot)
->>>>>>> 0ce5011 (Automatic commit by publish command: 16:38 02/20/26)
 
 #### Removable deformations 
 The graph that is constructed sometimes has vertices with index $+\frac{1}{2}$, and these are to believed to always be removable, by deforming the knot in some way. Actually, these are believed to only appear when the embedding has some sort of "non-preferred" deformation, take for example the unknot. With its typical embedding, its graph is two disjoint points with no edges (therefor both index $1$). When we deform this embedding (which looks like a perfect circle) to have a dent, these points of the graph become connected, and both get index $+\frac{1}{2}$. This is thus believed to be a signal of the dent, and hence removable. This removing (on the graph level) would delete de edge, and return the graph to the two disjoint points.
@@ -40,7 +37,7 @@ If we do allow disjoint graphs, should the natural situation to look at these gr
 
 Both these constructions might enable the "partitioning" of the knot so we can define compatibility to some "knotted partition".
 
-#### Graph corospondences
+#### Graph corespondences
 
 |left|right|
 | ----------- | ----------- |
