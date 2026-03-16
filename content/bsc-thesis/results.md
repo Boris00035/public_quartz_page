@@ -12,7 +12,7 @@ The data shows when you start to move the slider (or press the play button, but 
 <iframe
     src="assets/knotgrowth_results/grid/unknot_circle_3d.html" 
     style="width:100%;height:600px"
-</iframe>
+></iframe>
 <br></br>
 
 # Unknot dent
@@ -21,7 +21,8 @@ The data shows when you start to move the slider (or press the play button, but 
 <iframe
     src="assets/knotgrowth_results/boundary/unknot_dent_3d.html" 
     style="width:100%;height:600px"
-</iframe>
+></iframe>
+
 <br></br>
 
 ### Stereographic Projection
@@ -29,7 +30,7 @@ The data shows when you start to move the slider (or press the play button, but 
 <iframe
     src="assets/knotgrowth_results/boundary/unknot_dent_sp.html" 
     style="width:100%;height:600px"
-</iframe>
+></iframe>
 
 <br></br>
 
@@ -39,7 +40,7 @@ The data shows when you start to move the slider (or press the play button, but 
 <iframe
     src="assets/knotgrowth_results/boundary/unknot_twist_3d.html" 
     style="width:100%;height:600px"
-</iframe>
+></iframe>
 
 <br></br>
 
@@ -58,7 +59,7 @@ The data shows when you start to move the slider (or press the play button, but 
 <iframe
     src="assets/knotgrowth_results/boundary/unknot_double_twist_3d.html" 
     style="width:100%;height:600px"
-</iframe> 
+></iframe> 
 
 <br></br>
 
@@ -67,6 +68,6 @@ The data shows when you start to move the slider (or press the play button, but 
 <iframe
     src="assets/knotgrowth_results/boundary/unknot_double_twist_sp.html"
     style="width:100%;height:600px" 
-</iframe>
+></iframe>
 
 <br></br>
