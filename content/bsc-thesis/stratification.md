@@ -16,10 +16,10 @@ Let $(X, \mathcal{S}_X), (X, \mathcal{S}_{X'})$ two stratified manifolds. We say
 * and $b(s)$ is homeomorphic to $s$ for all $s \in \mathcal{S}_{X}$. 
 
 #### Definition (is this the right way to do this?) 
-Let $(X, \mathcal{S}_X), (Y, \mathcal{S}_Y)$ two stratified manifold. We say $f$ is a diffeomorphism of these, if:
+Let $(X, \mathcal{S}_X), (Y, \mathcal{S}_Y)$ two stratified manifolds. We say $f: (X, \mathcal{S}_X) \to (Y, \mathcal{S}_Y)$ is a diffeomorphism of these, if:
 * $f$ is a diffeomorphism between $X$ and $Y$.
 * $f(\mathcal{S}_X)$ is equivalent to $\mathcal{S}_Y$.
-* $f(\mathcal{S}_Y)$ is equivalent to $\mathcal{S}_X$.
+* $f^{-1}(\mathcal{S}_Y)$ is equivalent to $\mathcal{S}_X$.
 
 Where $f(\mathcal{S}_X)$ is defined as the collection of images of $f$ of the components of $\mathcal{S}_X$.
 
@@ -49,7 +49,7 @@ Let $f: M \to \mathbb{R}^n$ a (generic?) smooth map. Then this induces a stratif
 Let $f: M \to \mathbb{R}^n$ a generic smooth map. We endow $M$ with the stratification induced by pulling back the max-stratification on $\mathbb{R}^n$ over $f$. Then $\{ \text{Y}, - \}$ [^model] is a stratified model of $M$.
 
 #### Definition
-We define an _almost family of generic functions_ as a family of functions $g: M \times \mathbb{R} \to \mathbb{R}^n$ together with a set of _bifurcation points_ $\subset M \times \mathbb{R}$, where for each $t$ not part of a bifurcation point, $g(\_, t)$ is generic.
+We define _generic family of functions_ as a family of functions $g: M \times \mathbb{R} \to \mathbb{R}^n$ together with a set of _bifurcation points_ $\subset M \times \mathbb{R}$, where for each $t$ not part of a bifurcation point, $g(\_, t)$ is generic.
 
 #### Claim
 Let $(x_b,t_b)$ be a bifurcation point. Then we can model this bifurcation as a half plane moving over the point $x_b$, crossing it exactly at $t_b$.
