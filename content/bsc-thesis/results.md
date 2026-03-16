@@ -13,6 +13,7 @@ The data shows when you start to move the slider (or press the play button, but 
     src="assets/knotgrowth_results/grid/unknot_circle_3d.html" 
     style="width:100%;height:600px"
 </iframe>
+<br></br>
 
 # Unknot dent
 ### 3D
