@@ -10,68 +10,56 @@ The data shows when you start to move the slider (or press the play button, but 
 # Unknot dent
 ### 3D
 
-<div>
 <iframe
-    src="assets/knotgrowth_results/boundary/unknot_dent_3d.html" 
+    src="knotgrowth_results/boundary/unknot_dent_3d.html" 
     style="width:100%;height:600px"
 </iframe>
-</div>
 
 <br></br>
 
 ### Stereographic Projection
 
-<div>
 <iframe
-    src="assets/knotgrowth_results/boundary/unknot_dent_sp.html" 
+    src="knotgrowth_results/boundary/unknot_dent_sp.html" 
     style="width:100%;height:600px"
 </iframe>
-</div>
 
 <br></br>
 
 # Unknot twist
 ### 3D
 
-<div>
 <iframe
-    src="assets/knotgrowth_results/boundary/unknot_twist_3d.html" 
+    src="knotgrowth_results/boundary/unknot_twist_3d.html" 
     style="width:100%;height:600px"
 </iframe>
-</div>
 
 <br></br>
 
 ### Stereographic Projection
 
-<div>
 <iframe
-    src="assets/knotgrowth_results/boundary/unknot_twist_sp.html" 
+    src="knotgrowth_results/boundary/unknot_twist_sp.html" 
     style="width:100%;height:600px"
 </iframe>
-</div>
 
 <br></br>
 
 # Unknot double twist
 ### 3D
 
-<div>
 <iframe
-    src="assets/knotgrowth_results/boundary/unknot_double_twist_3d.html" 
+    src="knotgrowth_results/boundary/unknot_double_twist_3d.html" 
     style="width:100%;height:600px"
 </iframe> 
-</div>
 
 <br></br>
 
 ### Stereographic Projection
 
-<div>
 <iframe
-    src="assets/knotgrowth_results/boundary/unknot_double_twist_sp.html"
+    src="knotgrowth_results/boundary/unknot_double_twist_sp.html"
     style="width:100%;height:600px" 
 </iframe>
-</div>
 
 <br></br>
