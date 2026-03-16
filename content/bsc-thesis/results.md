@@ -22,7 +22,6 @@ The data shows when you start to move the slider (or press the play button, but 
     src="assets/knotgrowth_results/boundary/unknot_dent_3d.html" 
     style="width:100%;height:600px"
 </iframe>
-
 <br></br>
 
 ### Stereographic Projection
