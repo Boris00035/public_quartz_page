@@ -3,7 +3,7 @@ title: Interactive results
 publish: true
 ---
 
-Here we see an isotopy of the unknot evolving on the right side, and the resulting growth of the cell colonies + the boundary points on the right. 
+Here we see isotopies of the unknot evolving on the right side, and the resulting growth of the cell colonies + the boundary points on the left. All the datapoints are in the site, so it takes a little while to load but once it does works smoothly (The data on the stereographic plots only show after clicking the home button in the top right). 
 
 # Unknot circle
 ### 3D
