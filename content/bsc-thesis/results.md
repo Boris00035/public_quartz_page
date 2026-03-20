@@ -57,12 +57,13 @@ Here we see isotopies of the unknot evolving on the right side, and the resultin
 ### Stereographic Projection of Boundary
 
 <iframe
-    src="assets/knotgrowth_results/interactive_html/sp/unknot_double_twist_sp.html"
+    src="assets/knotgrowth_results/interactive_html/boundary_sp/unknot_double_twist_sp.html"
     style="width:100%;height:650px" 
 ></iframe>
 
 <br></br>
 
+# Trefoil
 ### Growth process trefoil
 
 <iframe
