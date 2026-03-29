@@ -14,7 +14,7 @@ Here we see isotopies of the unknot evolving on the right side, and the resultin
     style="width:100%;height:650px"
 ></iframe>
 
-<br></br>
+<br>
 
 ### Stereographic Projection of Boundary
 
@@ -23,7 +23,7 @@ Here we see isotopies of the unknot evolving on the right side, and the resultin
     style="width:100%;height:650px"
 ></iframe>
 
-<br></br>
+<br>
 
 # Unknot twist
 ### 3D
@@ -33,7 +33,7 @@ Here we see isotopies of the unknot evolving on the right side, and the resultin
     style="width:100%;height:650px"
 ></iframe>
 
-<br></br>
+<br>
 
 ### Stereographic Projection of Boundary
 
@@ -42,7 +42,7 @@ Here we see isotopies of the unknot evolving on the right side, and the resultin
     style="width:100%;height:650px"
 ></iframe>
 
-<br></br>
+<br>
 
 # Unknot double twist
 ### 3D
@@ -50,25 +50,33 @@ Here we see isotopies of the unknot evolving on the right side, and the resultin
 <iframe
     src="assets/knotgrowth_results/interactive_html/3d/unknot_double_twist_3d.html" 
     style="width:100%;height:650px"
-></iframe> 
+></iframe>
 
-<br></br>
+<br>
 
 ### Stereographic Projection of Boundary
 
 <iframe
     src="assets/knotgrowth_results/interactive_html/boundary_sp/unknot_double_twist_sp.html"
-    style="width:100%;height:650px" 
+    style="width:100%;height:650px"
 ></iframe>
 
-<br></br>
+<br>
 
 # Trefoil
+
+### Final trefoil
+
+<iframe
+    src="assets/knotgrowth_results/interactive_html/3d/trefoil_3d.html"
+    style="width:100%;height:650px"
+></iframe>
+
 ### Growth process trefoil
 
 <iframe
-    src="assets/knotgrowth_results/interactive_html/growth/trefoil_trefoil_3d.html"
-    style="width:100%;height:650px" 
+    src="assets/knotgrowth_results/interactive_html/growth/trefoil_3d.html"
+    style="width:100%;height:650px"
 ></iframe>
 
-<br></br>
+<br>
