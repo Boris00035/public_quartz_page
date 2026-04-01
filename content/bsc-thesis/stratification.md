@@ -5,50 +5,90 @@ publish: true
 ## Sketch
 We have a function $f: M \to \mathbb{R}^n$, with $n$ the number of colours we use. $\mathbb{R}^n$ is stratified with $n$ types of strata, according to which coordinate is maximal. We want to look at how $f$ pulls this stratification back to $M$.
 
-
-## Formal
+## Stratified manifolds
 Manifold always means smooth manifold.
 
+#### Definition (pre-stratification)
+Let $M$ be a manifold. Let $\mathcal{S}$ be a cover of $M$, consisting of pairwise disjoint smooth submanifolds of $M$, which we call strata. Then we call $\mathcal{S}$ a pre-stratification of $M$.
 
-#### Definition (is this enough? Can the homeomorphisms change how the strata fit together?)
-Let $(X, \mathcal{S}_X), (X, \mathcal{S}_{X'})$ two stratified manifolds. We say the stratifications $\mathcal{S}_X, \mathcal{S}_{X'}$ are equivalent if: 
-* There is a bijection $b: \mathcal{S}_X \to \mathcal{S}_{X'}$ 
-* and $b(s)$ is homeomorphic to $s$ for all $s \in \mathcal{S}_{X}$. 
+#### Definition (Condition b)
 
-#### Definition (is this the right way to do this?) 
-Let $(X, \mathcal{S}_X), (Y, \mathcal{S}_Y)$ two stratified manifolds. We say $f: (X, \mathcal{S}_X) \to (Y, \mathcal{S}_Y)$ is a diffeomorphism of these, if:
-* $f$ is a diffeomorphism between $X$ and $Y$.
-* $f(\mathcal{S}_X)$ is equivalent to $\mathcal{S}_Y$.
-* $f^{-1}(\mathcal{S}_Y)$ is equivalent to $\mathcal{S}_X$.
+Let $M$ a manifold.  
 
-Where $f(\mathcal{S}_X)$ is defined as the collection of images of $f$ of the components of $\mathcal{S}_X$.
+#### Definition (Condition of the frontier)
+Let $M$ a manifold and $U$ a subset. We say the frontier of $U$ is the set of limit points of $U$ not contained in $U$, being $\bar{U} - U$. Let $\mathcal{S}_M$ be a pre-stratification. We say $\mathcal{S}_M$ satisfies the condition of the frontier if for each stratum $X \in \mathcal{S}_M$ its frontier is a union of strata. 
+
+
+#### Definition (locally finiteness)
+Let $M$ a manifold and $\mathcal{S}_M$ a pre-stratification of $M$. Then we say $\mathcal{S}_M$ is locally finite, if each point in $M$ has a neighbourhood which intersects finitely many strata.  
+
+#### Definition (stratified manifold)
+Let $M$ a manifold and $\mathcal{S}_M$ a pre-stratification of $M$. Then we say that $\mathcal{S}_M$ is a stratification of $M$ if:
+1. It is locally finite.
+2. It satisfies the condition of the frontier.
+3. It satisfies condition b. 
+
+We then call $(M, \mathcal{S}_M)$ a stratified manifold.
+
+#### Definition (stratified diffeomorphism)
+Let $(X, \mathcal{S}_X), (Y, \mathcal{S}_Y)$ two stratified manifolds. We say a diffeomorphism $f: (X, \mathcal{S}_X) \to (Y, \mathcal{S}_Y)$ is a _stratified diffeomorphism_ if there exists a bijection $b: \mathcal{S}_X \to \mathcal{S}_Y$ such that for every $(S, b(S)) \in (\mathcal{S}_X, \mathcal{S}_Y)$, the restriction $f|_{S}: S \to b(S)$ is a diffeomorphism.
+
+## Transversality
+
+#### Definition transversality of vector spaces
+Assume We have two vectorsubspaces $A,B \subset X$ of some vector space $X$. We write $A \pitchfork B$ if $A + B = X$.
+
+#### Definition transversality of manifolds
+Assume we have two submanifolds $A,B \subset M$ of some manifold $M$. We write $A \pitchfork B$ if for each $p \in A \cap B, \; T_pA \pitchfork T_pB$ (as vector spaces).
+
+#### Definition 4.1. (p.50) Transversality
+
+Let X, Y be smooth manifolds and $f: X \to Y$ be a smooth mapping. Let $W$ be a submanifold of $Y$ and $x \in X$. Then $f$ intersects $W$ transversally at $x$ (denoted by $f \pitchfork W$ at $x$) if either:
+1. $f(x) \not\in W$, or
+2. $f(x) \in W$, and $T_{f(x)}W \pitchfork (df)_x(T_xX)$ (as vector spaces).
+
+We write $f \pitchfork W$ on $A$ if $f \pitchfork W$ at $x, \; \forall x \in A$. We leave the "on ..." if $f \pitchfork W$ on the entire $X$. 
+
+#### Definition (Transversal map)
+Let $X$ some manifold, and $x \in X$. Let $(Y, \mathcal{S}_Y)$ be some stratified manifold. We say that a function $f: X \to Y$ intersects $\mathcal{S}_Y$ transversally at $x$ (denoted by $f \pitchfork \mathcal{S}_Y$), if for each stratum $S \in \mathcal{S}_Y$, $f$ intersects $S$ transversally at $x$.
+
+We write $f \pitchfork \mathcal{S}_Y$ on $A$ if $f \pitchfork \mathcal{S}_Y$ at $x, \; \forall x \in A$. We leave the "on ..." if $f \pitchfork \mathcal{S}_Y$ on the entire $X$.
+
+#### Claim
+Let $X$ a manifold, and $(Y, \mathcal{S}_Y)$ a stratified manifold. Then $f \pitchfork \mathcal{S}_Y$ is a generic property of $C^{\infty}(X,Y)$.
+
+
+## Stratified model
 
 [^strat]: Does a stratification always descent to subsets?
+#### Definition (stratified model) (Should add notion of "stable model")
+Let $M$ be some stratified manifold. We say that a collection of stratified manifolds $\mathcal{M}$ is a _stratified model_ of $M$, if for every point $p \in M$, there exists a neighbourhood (endowed with the subset stratification[^strat]) for which there exists a stratified diffeomorphism with some component of $\mathcal{M}$.
 
-#### Definition (stratified model) 
-Let $M$ some stratified manifold. We say that a collection of stratified manifolds $\mathcal{M}$ is a _stratified model_ of $M$, if for every point $p \in M$, there exists a neighbourhood (endowed with the subset stratification[^strat]) which is diffeomorphic to some component of $\mathcal{M}$.
-
-#### Definition / Claim (max-stratification)
+#### Definition / Claim (max-stratification) (These have overlap when defined as such so is probably not good)
 Let $\mathcal{S}_m := \{U_S \; | \; S \subset \{0..n\} \}$ be a collection of subsets of $\mathbb{R}^n$ with $U_S$ given by:
 
 $$ 
 U_S := \{ p \in \mathbb{R}^n | \; p_i \in \max_j(p_j), \; \forall i \in S \}.
 $$
 
-Then $\mathcal{S}_m$ is a stratification, which we will call the max-stratification. Additionally, the dimension of $U_S$ will be given by $\dim(U_S) = n - |S|$. 
+Then $\mathcal{S}_m$ is a stratification, which we will call the max-stratification. Additionally, the dimension of $U_S$ will be given by $\dim(U_S) = n - |S|$.   
 
 
-#### Claim (needs work)
-Let $f: M \to \mathbb{R}^n$ a (generic?) smooth map. Then this induces a stratification on $M$ by "pulling back" the max-stratification.
+
+
+<!-- Old: 1 April 2026 -->
+
+<!-- #### Claim (needs work)
+Let $f: M \to \mathbb{R}^n$ a generic smooth map. Then this induces a stratification on $M$ by "pulling back" the max-stratification.
 
 [^model]: Need to define these model manifolds along with their stratification. 
 
 [^genericity]: Is this if and only if? If so, then we could also state that a bifurcation point is a point (x,t) where the stratified model is not actually a model.
 
 #### Claim [^genericity]
-Let $f: M \to \mathbb{R}^n$ a generic smooth map. We endow $M$ with the stratification induced by pulling back the max-stratification on $\mathbb{R}^n$ over $f$. Then $\{ \text{Y}, - \}$ [^model] is a stratified model of $M$.
+Let $f: M \to \mathbb{R}^n$ a generic smooth map. We endow $M$ with the stratification induced by pulling back the max-stratification on $\mathbb{R}^n$ over $f$. Then $\{ \text{Y}, - \}$ [^model] is a stratified model of $M$. -->
 
-#### Definition
+<!-- #### Definition
 We define _generic family of functions_ as a family of functions $g: M \times \mathbb{R} \to \mathbb{R}^n$ together with a set of _bifurcation points_ $\subset M \times \mathbb{R}$, where for each $t$ not part of a bifurcation point, $g(\_, t)$ is generic.
 
 #### Claim
@@ -57,7 +97,7 @@ Let $(x_b,t_b)$ be a bifurcation point. Then we can model this bifurcation as a 
 
 
 ## Evolution of $f$
-* Investigate how this $f$ should evolve according to the cell growth specified in this [paper](https://repository.kulib.kyoto-u.ac.jp/server/api/core/bitstreams/7de154cb-2df4-4436-8a90-6dca9da1b221/content).
+* Investigate how this $f$ should evolve according to the cell growth specified in this [paper](https://repository.kulib.kyoto-u.ac.jp/server/api/core/bitstreams/7de154cb-2df4-4436-8a90-6dca9da1b221/content). -->
 
 <!-- ----
 
