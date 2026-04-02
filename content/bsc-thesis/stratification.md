@@ -13,14 +13,14 @@ Let $M$ be a manifold. Let $\mathcal{S}$ be a cover of $M$, consisting of pairwi
 
 #### Definition (Condition b)
 
-Let $M$ a manifold.  
+Let $M$ a manifold.
 
 #### Definition (Condition of the frontier)
 Let $M$ a manifold and $U$ a subset. We say the frontier of $U$ is the set of limit points of $U$ not contained in $U$, being $\bar{U} - U$. Let $\mathcal{S}_M$ be a pre-stratification. We say $\mathcal{S}_M$ satisfies the condition of the frontier if for each stratum $X \in \mathcal{S}_M$ its frontier is a union of strata. 
 
 
 #### Definition (locally finiteness)
-Let $M$ a manifold and $\mathcal{S}_M$ a pre-stratification of $M$. Then we say $\mathcal{S}_M$ is locally finite, if each point in $M$ has a neighbourhood which intersects finitely many strata.  
+Let $M$ a manifold and $\mathcal{S}_M$ a pre-stratification of $M$. Then we say $\mathcal{S}_M$ is locally finite, if each point in $M$ has a neighbourhood which intersects finitely many strata.
 
 #### Definition (stratified manifold)
 Let $M$ a manifold and $\mathcal{S}_M$ a pre-stratification of $M$. Then we say that $\mathcal{S}_M$ is a stratification of $M$ if:
