@@ -1,0 +1,37 @@
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.2.0/model-viewer.min.js"></script>
+
+<select id="modelSelect">
+  <option value="glbs/3_1.glb">3_1</option>
+  <option value="glbs/4_1.glb">4_1</option>
+  <option value="glbs/5_1.glb">5_1</option>
+  <option value="glbs/5_2.glb">5_2</option>
+  <option value="glbs/6_1.glb">6_1</option>
+  <option value="glbs/6_2.glb">6_2</option>
+  <option value="glbs/6_3.glb">6_3</option>
+  <option value="glbs/7_1.glb">7_1</option>
+  <option value="glbs/7_2.glb">7_2</option>
+  <option value="glbs/7_3.glb">7_3</option>
+  <option value="glbs/7_4.glb">7_4</option>
+  <option value="glbs/7_5.glb">7_5</option>
+  <option value="glbs/7_6.glb">7_6</option>
+  <option value="glbs/7_7.glb">7_7</option>
+
+</select>
+
+<model-viewer id="viewer"
+  src="glbs/3_1.glb"
+  shadow-intensity="1"
+  exposure="0.3"
+  camera-controls
+  touch-action="pan-y"
+  style="width:100vw;height:100vh;display:block;">
+</model-viewer>
+
+<script>
+  const select = document.getElementById("modelSelect");
+  const modelViewer = document.querySelector("model-viewer");
+  
+  select.addEventListener("change", () => {
+    modelViewer.src = select.value;
+  });
+</script>

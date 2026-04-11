@@ -11,6 +11,7 @@ A page about interesting devices.
 * [Jolla](https://commerce.jolla.com/)
 * [Name: Minimal phone. E-ink screen](https://minimalcompany.com/collections/frontpage/products/minimal-phone)
 * [Ikko; looks cool but kinda feels like an AI generated company](https://ikko.com/products/mind-one-phone)
+* https://www.sidephone.com/
 
 ## Other handhelds
 [Pilet; Rasberry pi based computer. open source](https://soulscircuit.com/pilet)
